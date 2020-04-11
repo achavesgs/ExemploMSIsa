@@ -1,5 +1,6 @@
 package com.example.ExemploMS.controller;
 
+import com.example.ExemploMS.client.vo.Token;
 import com.example.ExemploMS.model.Pessoa;
 import com.example.ExemploMS.service.PessoaService;
 import org.slf4j.Logger;
@@ -25,5 +26,10 @@ public class Controller {
 
         logger.info(pessoaService.buscaPessoa(1).getNome());
         return ResponseEntity.ok(pessoaService.buscaPessoa(1));
+    }
+
+    @GetMapping(path = "/token")
+    public ResponseEntity<Token> buscaToken(){
+        return ResponseEntity.ok(pessoaService.buscaToken());
     }
 }
