@@ -1,5 +1,6 @@
-package com.example.ExemploMS.client;
+package com.example.ExemploMS.client.impl;
 
+import com.example.ExemploMS.client.ClientService;
 import com.example.ExemploMS.client.vo.BuscaTokenRequest;
 import com.example.ExemploMS.client.vo.Token;
 import org.slf4j.Logger;
@@ -13,9 +14,9 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 
 @Component
-public class ClientImpl {
+public class ClientServiceImpl implements ClientService {
 
-    Logger logger = LoggerFactory.getLogger(ClientImpl.class);
+    Logger logger = LoggerFactory.getLogger(ClientServiceImpl.class);
 
     @Value("${token.path}")
     private String tokenPath = "";

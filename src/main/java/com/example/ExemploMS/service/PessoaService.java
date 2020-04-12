@@ -1,6 +1,6 @@
 package com.example.ExemploMS.service;
 
-import com.example.ExemploMS.client.ClientImpl;
+import com.example.ExemploMS.client.ClientService;
 import com.example.ExemploMS.client.vo.Token;
 import com.example.ExemploMS.model.Pessoa;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 public class PessoaService {
 
     @Autowired
-    ClientImpl client;
+    ClientService client;
 
     public Pessoa buscaPessoa(int id) {
         Pessoa pessoa = new Pessoa();

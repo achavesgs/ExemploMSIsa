@@ -1,4 +1,4 @@
-package com.example.ExemploMS.controller;
+package com.example.ExemploMS.web;
 
 import com.example.ExemploMS.client.vo.Token;
 import com.example.ExemploMS.model.Pessoa;
